@@ -23,19 +23,6 @@ body{
     color: white ;
 }
 
-
-
-.carousel-item img{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
 .aboutSection{
     margin: auto;
     max-width: 1000px;
@@ -120,5 +107,54 @@ i{
 }
 
 .gallerySection{
-    
+    background: url("images/coffe.jpg") ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
 }
+
+.hours{
+    font-family: 'Bevan', cursive;
+    text-shadow: 2px 2px 1px black;
+}
+
+.orange{
+    color:rgb(255, 119, 0);
+}
+
+.brown{
+    color:rgb(49, 23, 0);
+}
+
+
+
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.catchP{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-inner {
+      display: flex;
+    }
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+      padding-right: 10px;
+    }
+  }
