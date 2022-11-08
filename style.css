@@ -1,21 +1,34 @@
 .logo{
     width: 8rem;
     position: relative;
-    top:-3.5rem;
-    left: 50%;
-    margin-left: -4rem;
+    bottom: -2rem;
 }
 
-/* .prel{
+body{
+    scroll-behavior: smooth;
+    font-family: 'Tiro Telugu', serif;
+}
+
+.NavbarPrinc{
     position: relative;
-    top:-20rem;
-    z-index: -1;
-} */
+    background-color: rgba(69, 69, 69, 0.387);
+}
+
+
+.aboutUs{
+    background-image: url("images/img_1.JPG");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    color: white ;
+}
+
+
 
 .carousel-item img{
     width: 100%;
-    height: 20rem;
-    object-fit: cover;
+    height: 100%;
+    object-fit:cover;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
@@ -24,6 +37,88 @@
 }
 
 .aboutSection{
-    background-color: #FEAC98;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.backgroundPrinc{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+.BackgroundDiv{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/fundo.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+}
+
+.center img{
+    height: 250px;
+}
+
+.center h1{
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+
+.NavPrinc{
+    position: absolute;
+    top:0;
+    
+}
+
+.social{
+    cursor: pointer;
+}
+
+.social :hover{
+    color: black;
+}
+
+.NavPrinc i{
+    color: white;
+}
+
+ .btn{
+    color: white;
+}
+
+.sectionTitle{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-family: 'Bevan', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+.sectionSubtitle{
+    font-family: 'Pacifico', cursive;
+    padding: 0;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+i{
+    font-size: 50px;
+}
+
+.gallerySection{
     
 }
