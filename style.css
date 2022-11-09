@@ -1,3 +1,9 @@
+html,body{
+    scroll-behavior: smooth;
+    font-family: 'Tiro Telugu', serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .logoText{
     visibility: hidden;
@@ -24,6 +30,11 @@
     margin: 0;
 }
 
+.navLinks :hover{
+    color:beige;
+    text-shadow: 2px 2px 1px rgb(49, 23, 0);
+}
+
 .white{
     color: beige;
 }
@@ -39,15 +50,7 @@
     bottom: -2rem;
 }
 
-body{
-    scroll-behavior: smooth;
-    font-family: 'Tiro Telugu', serif;
-}
 
-html,body{
-    max-width: 100%;
-    overflow-x: hidden;
-}
 
 .NavbarPrinc{
     position: absolute;
@@ -118,7 +121,8 @@ html,body{
 }
 
 .social :hover{
-    color: black;
+    color:beige;
+    text-shadow: 2px 2px 1px rgb(49, 23, 0);
 }
 
  .btn{
@@ -176,15 +180,24 @@ i{
     background: transparent;
 }
 
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
 .carousel-item img{
-    width: 100%;
+    margin:auto;
     height: 40rem;
-    object-fit:cover;
+    max-width: 1000px;
+    object-fit: fill;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+.carousel-inner{
+    margin: auto;
 }
 
 .catchP{
@@ -193,3 +206,26 @@ i{
     margin: 0;
 }
 
+.follow{
+    text-decoration: none;
+    color: rgb(49, 23, 0);
+}
+
+.follow :hover{
+    cursor: pointer;
+    color: rgb(49, 23, 0);
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-item img{
+        margin:auto;
+        max-height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+  }
