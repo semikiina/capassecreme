@@ -1,3 +1,37 @@
+.logoText{
+    visibility: hidden;
+
+    opacity:0;
+    transition:visibility 0.2s linear,opacity 0.2s linear;
+}
+
+.logoText.scrolled{
+    visibility: visible;
+    opacity:1;
+}
+
+.navbar-default{
+    transition: 2000ms ease;
+    background: transparent;
+}
+.navbar-default.scrolled{
+    background: rgb(133, 110, 68);
+}
+
+.navLinks{
+    font-family: 'Bevan', cursive;
+    margin: 0;
+}
+
+.white{
+    color: beige;
+}
+
+.logo_nav{
+    width: 3rem;
+    height: auto;
+}
+
 .logo{
     width: 8rem;
     position: relative;
@@ -10,8 +44,16 @@ body{
 }
 
 .NavbarPrinc{
-    position: relative;
+    position: absolute;
+    top: 0;
     background-color: rgba(69, 69, 69, 0.387);
+    z-index: 1;
+    margin-top: -2rem;
+}
+
+.NavbarPrinc i{
+    color: white;
+    font-size: 2rem;
 }
 
 
@@ -65,22 +107,12 @@ body{
     text-shadow: 2px 2px 1px black;
 }
 
-.NavPrinc{
-    position: absolute;
-    top:0;
-    
-}
-
 .social{
     cursor: pointer;
 }
 
 .social :hover{
     color: black;
-}
-
-.NavPrinc i{
-    color: white;
 }
 
  .btn{
@@ -126,8 +158,13 @@ i{
     color:rgb(49, 23, 0);
 }
 
-
-
+.teste{
+    position:fixed;
+    width: 100%;
+    padding-top: 2rem;
+    transition: 1000ms ease;
+    background: transparent;
+}
 
 .carousel-item img{
     width: 100%;
@@ -158,3 +195,4 @@ i{
       padding-right: 10px;
     }
   }
+
