@@ -1,6 +1,6 @@
 html,body{
     scroll-behavior: smooth;
-    font-family: 'Tiro Telugu', serif;
+    font-family: 'Raleway', serif;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -26,7 +26,7 @@ html,body{
 }
 
 .navLinks{
-    font-family: 'Bevan', cursive;
+    font-family: 'Raleway', serif;
     margin: 0;
 }
 
@@ -132,9 +132,15 @@ html,body{
 .sectionTitle{
     font-size: 4rem;
     margin-bottom: 3rem;
-    font-family: 'Bevan', cursive;
-    padding: 0;
+    font-family: 'Pacifico', serif;
     margin: 0;
+}
+
+.sectionSubtitle1{
+    font-family: 'Raleway', serif;
+    padding: 0;
+    margin-bottom: 3rem;
+    font-size: 2rem;
 }
 
 .sectionSubtitle{
@@ -156,7 +162,8 @@ i{
 }
 
 .hours{
-    font-family: 'Bevan', cursive;
+    font-family: 'Raleway', serif;
+    font-weight: bold;
     text-shadow: 2px 2px 1px black;
 }
 
